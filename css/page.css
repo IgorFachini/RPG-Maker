@@ -1,0 +1,14 @@
+/* Main container definitions */
+html, body, main.main-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  font-family: 'MedievalSharp', cursive;
+  width: 100%;
+}
+
+/* Main container div */
+main.main-container {
+
+}
