@@ -4,22 +4,21 @@ html, body, main.main-container {
   padding: 0;
   width: 100%;
   height: auto;
-  font-family: 'MedievalSharp', cursive;
+  font-family: 'BlackChancery', cursive;
   width: 100%;
 }
 
-/* Background page definitions */
-/*body {
-  background-image: url("../img/backg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
-
-/* Main container div */
-main.main-container {
-
+header {
+  font-family: 'Valdemar', cursive;
 }
 
+/* Background page definitions */
+body {
+  background-image: url("../img/background/oldpapper4.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-blend-mode: luminosity;
+}
 
 section.form-container {
   width: 100%;

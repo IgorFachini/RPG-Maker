@@ -1,5 +1,5 @@
 header.char-caracteristics {
-  font-size: 200%;
+  font-size: 230%;
   display: flex;
 }
 
@@ -29,4 +29,5 @@ section.char-caracteristics-content::after, section.char-caracteristics-content:
   content: "";
   width: 100%;
   border: 1px solid;
+  margin: .5ch 0;
 }

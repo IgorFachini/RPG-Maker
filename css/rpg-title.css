@@ -32,4 +32,5 @@ section.rpg-title-content::after, section.rpg-title-content::before {
   width: 100%;
   display: inline-block;
   border: 2px solid;
+  margin: .5ch 0;
 }
