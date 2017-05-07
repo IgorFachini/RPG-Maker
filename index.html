@@ -1,126 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RPG-MAKER</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>RPG-MAKER</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./libs/bootstrap-3.3.7/css/bootstrap.min.css">
-    <!-- Font style - Medieval -->
-    <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
-    <!-- Custom stylesheets -->
-    <link rel="stylesheet" href="css/page.css">
-    <link rel="stylesheet" href="css/rpg-title.css">
-    <link rel="stylesheet" href="css/char-caracteristcs.css">
-    <link rel="stylesheet" href="css/char-description-content.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./libs/bootstrap-3.3.7/css/bootstrap.min.css">
+  <!-- Font style - Medieval -->
+  <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+  <!-- Custom stylesheets -->
+  <link rel="stylesheet" href="css/page.css">
+  <link rel="stylesheet" href="css/rpg-title.css">
+  <link rel="stylesheet" href="css/char-caracteristcs.css">
+  <link rel="stylesheet" href="css/form.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
 
-  <body>
+<body>
 
-    <!-- Main page container -->
-    <main class="main-container">
-
-
+  <!-- Main page container -->
+  <main class="main-container">
 
 
-      <!-- Page container -->
-      <section class="container">
+    <!-- Page container -->
+    <section class="container">
 
 
+      <!-- Page form container -->
+      <section class="form-container">
 
 
         <!-- RPG title header -->
-        <header class="rpg-title">
+        <header class="rpg-title text-center">
 
           <section class="rpg-title-content">
-            <h1>RPG Title</h1>
-            <h3>RPG Subtitle</h3>
+            <h1>RPG Main Title</h1>
+            <h3>RPG Main Subtitle</h3>
           </section>
 
         </header>
 
+        <form id="char-description" class="form-group">
 
+          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 
-        <!-- Character description section -->
-        <!-- <section class="char-description-content">
-          <form class="" action="index.html" method="post">
-            <fieldset class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-              <label for=""></label>
-            </fieldset>
+            <label for="nome">Nome
+              <input class="form-control" type="text" id="nome" name="nome">
+            </label>
 
-            <fieldset class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <label for="jogador">Jogador
+              <input class="form-control" type="text" id="jogador" name="jogador">
+            </label>
 
-            </fieldset>
+            <label for="cronica">Crônica
+              <input class="form-control" type="text" id="cronica" name="cronica">
+            </label>
 
-            <fieldset class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          </fieldset>
 
-            </fieldset>
-          </form>
-        </section> -->
+          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 
+            <label for="natureza">Natureza
+              <input class="form-control" type="text" id="natureza" name="natureza">
+            </label>
 
+            <label for="comportamento">Comportamento
+              <input class="form-control" type="text" id="comportamento" name="comportamento">
+            </label>
 
-        <!-- RPG Characters Caracteristics header -->
-        <header class="char-caracteristics">
+            <label for="conceito">Conceito
+              <input class="form-control" type="text" id="conceito" name="conceito">
+            </label>
 
-          <section class="char-caracteristics-content">
-            <h1>RPG Title</h1>
-            <h3>RPG Subtitle</h3>
-          </section>
+          </fieldset>
 
-        </header>
+          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 
+            <label for="idade">Idade
+              <input class="form-control" type="text" id="idade" name="idade">
+            </label>
 
+            <label for="sexo">Sexo
+              <input class="form-control" type="text" id="sexo" name="sexo">
+            </label>
 
+            <label for="residencia">Residência
+              <input class="form-control" type="text" id="residencia" name="residencia">
+            </label>
 
-        <!-- RPG Characters Caracteristics header -->
-        <header class="char-caracteristics">
+          </fieldset>
 
-          <section class="char-caracteristics-content">
-            <h1>RPG Title</h1>
-            <h3>RPG Subtitle</h3>
-          </section>
-
-        </header>
-
-
-
-
-        <!-- RPG Characters Caracteristics header -->
-        <header class="char-caracteristics">
-
-          <section class="char-caracteristics-content">
-            <h1>RPG Title</h1>
-            <h3>RPG Subtitle</h3>
-          </section>
-
-        </header>
-
-
-
-
-
-
-
-
-
+        </form>
 
 
       </section>
-    </main>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="./libs/jquery-3.2.1/jquery-3.2.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="./libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-  </body>
+
+      <!-- Page form container -->
+      <section class="form-container">
+
+
+        <!-- RPG Characters Caracteristics header -->
+        <header class="char-caracteristics">
+
+          <section class="char-caracteristics-content">
+            <h1>Atributos</h1>
+          </section>
+
+        </header>
+
+        <form id="char-description" class="form-group">
+
+          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+
+            <div class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Físicos</h3>
+            </div>
+
+            <label for="forca">Força
+              <input class="form-control" type="text" id="forca" name="forca">
+            </label>
+
+            <label for="destreza">Destreza
+              <input class="form-control" type="text" id="destreza" name="destreza">
+            </label>
+
+            <label for="vigor">Vigor
+              <input class="form-control" type="text" id="vigor" name="vigor">
+            </label>
+
+          </fieldset>
+
+          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+
+            <div class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Sociais</h3>
+            </div>
+
+            <label for="carisma">Carisma
+              <input class="form-control" type="text" id="carisma" name="carisma">
+            </label>
+
+            <label for="manipulacao">Manipulação
+              <input class="form-control" type="text" id="manipulacao" name="manipulacao">
+            </label>
+
+            <label for="aparencia">Aparência
+              <input class="form-control" type="text" id="aparencia" name="aparencia">
+            </label>
+
+          </fieldset>
+
+          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+
+            <div class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Mentais</h3>
+            </div>
+
+            <label for="percepcao">Percepção
+              <input class="form-control" type="text" id="percepcao" name="percepcao">
+            </label>
+
+            <label for="inteligencia">Inteligência
+              <input class="form-control" type="text" id="inteligencia" name="inteligencia">
+            </label>
+
+            <label for="raciocinio">Raciocínio
+              <input class="form-control" type="text" id="raciocinio" name="raciocinio">
+            </label>
+
+          </fieldset>
+
+        </form>
+
+
+      </section>
+
+
+      <!-- Page form container -->
+      <section class="form-container">
+
+
+        <!-- RPG Characters Caracteristics header -->
+        <header class="char-caracteristics">
+
+          <section class="char-caracteristics-content">
+            <h1>Habilidades</h1>
+          </section>
+
+        </header>
+
+        <form id="char-description" class="form-group">
+
+          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+
+            <div class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Talentos</h3>
+            </div>
+
+            <label for="representacao">Representação
+              <input class="form-control" type="text" id="representacao" name="representacao">
+            </label>
+
+            <label for="prontidao">Prontidão
+              <input class="form-control" type="text" id="prontidao" name="prontidao">
+            </label>
+
+            <label for="esportes">Esportes
+              <input class="form-control" type="text" id="esportes" name="esportes">
+            </label>
+
+            <label for="briga">Briga
+              <input class="form-control" type="text" id="briga" name="briga">
+            </label>
+
+            <label for="esquiva">Esquiva
+              <input class="form-control" type="text" id="esquiva" name="esquiva">
+            </label>
+
+            <label for="empatia">Empatia
+              <input class="form-control" type="text" id="empatia" name="empatia">
+            </label>
+
+            <label for="Intimidacao">Intimidação
+              <input class="form-control" type="text" id="Intimidacao" name="Intimidacao">
+            </label>
+
+            <label for="crime">Crime
+              <input class="form-control" type="text" id="crime" name="crime">
+            </label>
+
+            <label for="lideranca">Liderança
+              <input class="form-control" type="text" id="lideranca" name="lideranca">
+            </label>
+
+            <label for="labia">Lábia
+              <input class="form-control" type="text" id="labia" name="labia">
+            </label>
+
+          </fieldset>
+
+          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+
+            <div class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Perícias</h3>
+            </div>
+
+            <label for="empatiacanimais">Empatia c/ Animais
+              <input class="form-control" type="text" id="empatiacanimais" name="empatiacanimais">
+            </label>
+
+            <label for="arqueirismo">Arqueirismo
+              <input class="form-control" type="text" id="arqueirismo" name="arqueirismo">
+            </label>
+
+            <label for="artesanato">Artesanato
+              <input class="form-control" type="text" id="artesanato" name="artesanato">
+            </label>
+
+            <label for="etiqueta">Etiqueta
+              <input class="form-control" type="text" id="etiqueta" name="etiqueta">
+            </label>
+
+            <label for="herborismo">Herborismo
+              <input class="form-control" type="text" id="herborismo" name="herborismo">
+            </label>
+
+            <label for="armasbrancas">Armas Brancas
+              <input class="form-control" type="text" id="armasbrancas" name="armasbrancas">
+            </label>
+
+            <label for="musica">Música
+              <input class="form-control" type="text" id="musica" name="musica">
+            </label>
+
+            <label for="cavalgar">Cavalgar
+              <input class="form-control" type="text" id="cavalgar" name="cavalgar">
+            </label>
+
+            <label for="furtividade">Furtividade
+              <input class="form-control" type="text" id="furtividade" name="furtividade">
+            </label>
+
+            <label for="sobrevivencia">Sobrevivência
+              <input class="form-control" type="text" id="sobrevivencia" name="sobrevivencia">
+            </label>
+
+          </fieldset>
+
+          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+
+            <div class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Conhecimentos</h3>
+            </div>
+
+            <label for="instrucao">Instrução
+              <input class="form-control" type="text" id="instrucao" name="instrucao">
+            </label>
+
+            <label for="sabedoriapopular">Sabedoria popular
+              <input class="form-control" type="text" id="sabedoriapopular" name="sabedoriapopular">
+            </label>
+
+            <label for="investigacao">Investigação
+              <input class="form-control" type="text" id="investigacao" name="investigacao">
+            </label>
+
+            <label for="direito">Direito
+              <input class="form-control" type="text" id="direito" name="direito">
+            </label>
+
+            <label for="linguistica">Linguística
+              <input class="form-control" type="text" id="linguistica" name="linguistica">
+            </label>
+
+            <label for="medicina">Medicina
+              <input class="form-control" type="text" id="medicina" name="medicina">
+            </label>
+
+            <label for="ocultismo">Ocultismo
+              <input class="form-control" type="text" id="ocultismo" name="ocultismo">
+            </label>
+
+            <label for="politica">Política
+              <input class="form-control" type="text" id="politica" name="politica">
+            </label>
+
+            <label for="ciencia">Ciência
+              <input class="form-control" type="text" id="ciencia" name="ciencia">
+            </label>
+
+            <label for="senescalia">Senescalia
+              <input class="form-control" type="text" id="senescalia" name="senescalia">
+            </label>
+
+          </fieldset>
+
+        </form>
+
+
+      </section>
+
+
+      <!-- Page form container -->
+      <section class="form-container">
+
+
+        <!-- RPG Characters Caracteristics header -->
+        <header class="char-caracteristics">
+
+          <section class="char-caracteristics-content">
+            <h1>Vantagens</h1>
+          </section>
+
+        </header>
+
+
+      </section>
+
+
+    </section>
+
+
+  </main>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="./libs/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="./libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
 </html>

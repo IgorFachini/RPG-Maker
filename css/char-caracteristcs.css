@@ -28,6 +28,5 @@ section.char-caracteristics-content {
 section.char-caracteristics-content::after, section.char-caracteristics-content::before {
   content: "";
   width: 100%;
-  display: inline-block;
   border: 1px solid;
 }

@@ -1,0 +1,31 @@
+fieldset {
+  padding: 0 1ch;
+}
+
+label {
+  width: 100%;
+}
+
+label > input{
+  float: right;
+  width: auto !important;
+}
+
+input {
+  box-shadow: none !important;
+  border: none !important;
+  border-bottom: solid 1px rgba(0, 0, 0, .2) !important;
+  transition: .3s ease-in-out;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
+input:focus {
+  border-bottom: solid 2px rgba(0, 0, 0, 1) !important;
+  transition: .3s ease-in-out;
+}
+
+.caracteristc-type {
+  border-bottom: solid 2px rgba(0, 0, 0, 1) !important;
+  display: inline-block;
+}

@@ -8,7 +8,21 @@ html, body, main.main-container {
   width: 100%;
 }
 
+/* Background page definitions */
+/*body {
+  background-image: url("../img/backg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
 /* Main container div */
 main.main-container {
 
+}
+
+
+section.form-container {
+  width: 100%;
+  float: left;
+  clear: left;
 }
