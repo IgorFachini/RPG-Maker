@@ -1,3 +1,3 @@
 # RPG-Maker
 
-Fonts Source: [http://www.1001fonts.com/](1001fonts.com)
+Fonts Source: [1001fonts.com](http://www.1001fonts.com/)
