@@ -5,11 +5,10 @@ html, body, main.main-container {
   width: 100%;
   height: auto;
   font-family: 'BlackChancery', cursive;
-  width: 100%;
 }
 
-header {
-  font-family: 'Valdemar', cursive;
+main.main-container {
+  margin: 0 0 2ch 0;
 }
 
 /* Background page definitions */
@@ -17,11 +16,35 @@ body {
   background-image: url("../img/background/oldpapper4.jpg");
   background-repeat: repeat-y;
   background-size: cover;
-  background-blend-mode: luminosity;
 }
 
+/* Definitions on Section that contains forms */
 section.form-container {
   width: 100%;
   float: left;
   clear: left;
+}
+
+/* Separator definitions */
+hr.separator {
+  width: 100%;
+  border: solid 1px #000;
+  margin: 4ch 0;
+  display: flex;
+}
+
+/* Border top and bottom definitions with pseudo-element */
+.pseudo-before-border:before, .pseudo-after-border:after {
+  content: '';
+  width: 100%;
+  border: 1px solid;
+  display: block;
+  margin: 4ch 0 4ch 0;
+}
+
+.exp-box {
+  width: 100%;
+  display: block;
+  padding: 4ch 2ch;
+  background-color: rgba(200, 188, 161, .5);
 }

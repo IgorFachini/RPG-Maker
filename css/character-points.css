@@ -1,0 +1,97 @@
+/* ------------------------------------------------------------------ */
+/* -------------------- Radius input definitions -------------------- */
+/* ------------------------------------------------------------------ */
+
+input[type=radio] {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border-radius: 1000px;
+}
+
+input[type=radio]:checked {
+  animation: checkedAnim .3s;
+  animation-timing-function: ease-in-out;
+}
+
+input[type=radio]:focus {
+  outline: none;
+}
+
+input[type=radio]::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #FFF;
+  transition: .5s;
+  border-radius: 1000px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+input[type=radio]:checked::after {
+  content: '';
+  color: #FFF;
+  background-color: rgb(94, 98, 104);
+  transition: .5s;
+  animation: checkedAnim .3s;
+  animation-timing-function: ease-in-out;
+}
+
+/* -------------------------------------------------------------------- */
+/* -------------------- Checkbox input definitions -------------------- */
+/* -------------------------------------------------------------------- */
+
+input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+input[type=checkbox]:checked {
+  animation: checkedAnim .3s;
+  animation-timing-function: ease-in-out;
+}
+
+input[type=checkbox]:focus {
+  outline: none;
+}
+
+input[type=checkbox]::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #FFF;
+  border: 1px solid rgba(0, 0, 0, .2);
+  transition: .5s;
+}
+
+input[type=checkbox]:checked::after {
+  content: '/';
+  color: #FFF;
+  background-color: rgb(94, 98, 104);
+  transition: .5s;
+  animation: checkedAnim .3s;
+  animation-timing-function: ease-in-out;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------- atributes, hability and vantages -------------------- */
+/* -------------------------------------------------------------------------- */
+
+
+
+/* ------------------------------------------------------------------------- */
+/* -------------------- Character point input keyframes -------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+@keyframes checkedAnim {
+  from   { transform: scale(0.00001); }
+  to     { transform: scale(1); }
+}

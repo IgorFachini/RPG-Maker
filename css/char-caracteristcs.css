@@ -1,6 +1,7 @@
 header.char-caracteristics {
   font-size: 230%;
   display: flex;
+  font-family: 'Valdemar', cursive;
 }
 
 header.char-caracteristics h1, header.char-caracteristics h3 {

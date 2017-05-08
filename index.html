@@ -10,12 +10,15 @@
   <link rel="stylesheet" href="./libs/bootstrap-3.3.7/css/bootstrap.min.css">
   <!-- Font style - Medieval -->
   <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+  <!-- Custom fonts -->
+  <link rel="stylesheet" href="css/fonts.css">
   <!-- Custom stylesheets -->
   <link rel="stylesheet" href="css/page.css">
   <link rel="stylesheet" href="css/rpg-title.css">
   <link rel="stylesheet" href="css/char-caracteristcs.css">
   <link rel="stylesheet" href="css/form.css">
-  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/select-options.css">
+  <link rel="stylesheet" href="css/character-points.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,7 +54,7 @@
 
         <form id="char-description" class="form-group">
 
-          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
             <label for="nome">Nome
               <input class="form-control" type="text" id="nome" name="nome">
@@ -67,7 +70,7 @@
 
           </fieldset>
 
-          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
             <label for="natureza">Natureza
               <input class="form-control" type="text" id="natureza" name="natureza">
@@ -83,7 +86,7 @@
 
           </fieldset>
 
-          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
             <label for="idade">Idade
               <input class="form-control" type="text" id="idade" name="idade">
@@ -118,13 +121,13 @@
 
         </header>
 
-        <form id="char-description" class="form-group">
+        <form id="char-atribute" class="form-group">
 
-          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
-            <div class="caracteristc-type-content text-center">
+            <header class="caracteristc-type-content text-center">
               <h3 class="caracteristc-type text-center">Físicos</h3>
-            </div>
+            </header>
 
             <label for="forca">Força
               <input class="form-control" type="text" id="forca" name="forca">
@@ -140,11 +143,11 @@
 
           </fieldset>
 
-          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
-            <div class="caracteristc-type-content text-center">
+            <header class="caracteristc-type-content text-center">
               <h3 class="caracteristc-type text-center">Sociais</h3>
-            </div>
+            </header>
 
             <label for="carisma">Carisma
               <input class="form-control" type="text" id="carisma" name="carisma">
@@ -160,11 +163,11 @@
 
           </fieldset>
 
-          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
-            <div class="caracteristc-type-content text-center">
+            <header class="caracteristc-type-content text-center">
               <h3 class="caracteristc-type text-center">Mentais</h3>
-            </div>
+            </header>
 
             <label for="percepcao">Percepção
               <input class="form-control" type="text" id="percepcao" name="percepcao">
@@ -199,61 +202,71 @@
 
         </header>
 
-        <form id="char-description" class="form-group">
+        <form id="char-hability" class="form-group">
 
-          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
-            <div class="caracteristc-type-content text-center">
+            <header class="caracteristc-type-content text-center">
               <h3 class="caracteristc-type text-center">Talentos</h3>
-            </div>
+            </header>
 
             <label for="representacao">Representação
               <input class="form-control" type="text" id="representacao" name="representacao">
+              <div>
             </label>
 
             <label for="prontidao">Prontidão
               <input class="form-control" type="text" id="prontidao" name="prontidao">
+              <div>
             </label>
 
             <label for="esportes">Esportes
               <input class="form-control" type="text" id="esportes" name="esportes">
+              <div>
             </label>
 
             <label for="briga">Briga
               <input class="form-control" type="text" id="briga" name="briga">
+              <div>
             </label>
 
             <label for="esquiva">Esquiva
               <input class="form-control" type="text" id="esquiva" name="esquiva">
+              <div>
             </label>
 
             <label for="empatia">Empatia
               <input class="form-control" type="text" id="empatia" name="empatia">
+              <div>
             </label>
 
             <label for="Intimidacao">Intimidação
               <input class="form-control" type="text" id="Intimidacao" name="Intimidacao">
+              <div>
             </label>
 
             <label for="crime">Crime
               <input class="form-control" type="text" id="crime" name="crime">
+              <div>
             </label>
 
             <label for="lideranca">Liderança
               <input class="form-control" type="text" id="lideranca" name="lideranca">
+              <div>
             </label>
 
             <label for="labia">Lábia
               <input class="form-control" type="text" id="labia" name="labia">
+              <div>
             </label>
 
           </fieldset>
 
-          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
-            <div class="caracteristc-type-content text-center">
+            <header class="caracteristc-type-content text-center">
               <h3 class="caracteristc-type text-center">Perícias</h3>
-            </div>
+            </header>
 
             <label for="empatiacanimais">Empatia c/ Animais
               <input class="form-control" type="text" id="empatiacanimais" name="empatiacanimais">
@@ -297,11 +310,11 @@
 
           </fieldset>
 
-          <fieldset class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
 
-            <div class="caracteristc-type-content text-center">
+            <header class="caracteristc-type-content text-center">
               <h3 class="caracteristc-type text-center">Conhecimentos</h3>
-            </div>
+            </header>
 
             <label for="instrucao">Instrução
               <input class="form-control" type="text" id="instrucao" name="instrucao">
@@ -363,6 +376,300 @@
           </section>
 
         </header>
+
+        <form id="char-advantage" class="form-group">
+
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+
+            <header class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Outras Características</h3>
+            </header>
+
+            <input class="form-control" type="text" id="others-carac1" name="others-carac1">
+            <input class="form-control" type="text" id="others-carac2" name="others-carac2">
+            <input class="form-control" type="text" id="others-carac3" name="others-carac3">
+            <input class="form-control" type="text" id="others-carac4" name="others-carac4">
+            <input class="form-control" type="text" id="others-carac5" name="others-carac5">
+            <input class="form-control" type="text" id="others-carac6" name="others-carac6">
+            <input class="form-control" type="text" id="others-carac7" name="others-carac7">
+            <input class="form-control" type="text" id="others-carac8" name="others-carac8">
+            <input class="form-control" type="text" id="others-carac9" name="others-carac9">
+            <input class="form-control" type="text" id="others-carac10" name="others-carac10">
+
+          </fieldset>
+
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+
+            <header class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Antecedentes</h3>
+            </header>
+
+            <input class="form-control" type="text" id="antecedent1" name="antecedent1">
+            <input class="form-control" type="text" id="antecedent2" name="antecedent2">
+            <input class="form-control" type="text" id="antecedent3" name="antecedent3">
+            <input class="form-control" type="text" id="antecedent4" name="antecedent4">
+            <input class="form-control" type="text" id="antecedent5" name="antecedent5">
+
+          </fieldset>
+
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+
+            <header class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Qualidades/defeitos</h3>
+            </header>
+
+            <input class="form-control" type="text" id="qualy-def1" name="qualy-def1">
+            <input class="form-control" type="text" id="qualy-def2" name="qualy-def2">
+            <input class="form-control" type="text" id="qualy-def3" name="qualy-def3">
+            <input class="form-control" type="text" id="qualy-def4" name="qualy-def4">
+            <input class="form-control" type="text" id="qualy-def5" name="qualy-def5">
+
+          </fieldset>
+
+        </form>
+
+
+
+      </section>
+
+
+
+      <!-- Page form container -->
+      <section class="form-container pseudo-before-border">
+
+
+        <form id="char-others" class="form-group">
+
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+
+            <header class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Virtudes</h3>
+            </header>
+
+            <label for="conciencia">Conciência
+              <input class="form-control" type="text" id="conciencia" name="conciencia">
+            </label>
+
+            <label for="autocontrole">Autocontrole
+              <input class="form-control" type="text" id="autocontrole" name="autocontrole">
+            </label>
+
+            <label for="coragem">Coragem
+              <input class="form-control" type="text" id="coragem" name="coragem">
+            </label>
+
+          </fieldset>
+
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-center">
+
+            <header class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Humanidade</h3>
+            </header>
+
+            <input type="radio" name="humanity1" value="1">
+            <input type="radio" name="humanity2" value="1">
+            <input type="radio" name="humanity3" value="1">
+            <input type="radio" name="humanity4" value="1">
+            <input type="radio" name="humanity5" value="1">
+            <input type="radio" name="humanity6" value="1">
+            <input type="radio" name="humanity7" value="1">
+            <input type="radio" name="humanity8" value="1">
+            <input type="radio" name="humanity9" value="1">
+            <input type="radio" name="humanity10" value="1">
+
+            <header class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Força de vontade</h3>
+            </header>
+
+            <div class="">
+
+              <input type="radio" name="willpower1" value="1">
+              <input type="radio" name="willpower2" value="1">
+              <input type="radio" name="willpower3" value="1">
+              <input type="radio" name="willpower4" value="1">
+              <input type="radio" name="willpower5" value="1">
+              <input type="radio" name="willpower6" value="1">
+              <input type="radio" name="willpower7" value="1">
+              <input type="radio" name="willpower8" value="1">
+              <input type="radio" name="willpower9" value="1">
+              <input type="radio" name="willpower10" value="1">
+
+            </div>
+
+            <div class="">
+
+              <input type="checkbox" name="willpower-null1" value="">
+              <input type="checkbox" name="willpower-null2" value="">
+              <input type="checkbox" name="willpower-null3" value="">
+              <input type="checkbox" name="willpower-null4" value="">
+              <input type="checkbox" name="willpower-null5" value="">
+              <input type="checkbox" name="willpower-null6" value="">
+              <input type="checkbox" name="willpower-null7" value="">
+              <input type="checkbox" name="willpower-null8" value="">
+              <input type="checkbox" name="willpower-null9" value="">
+              <input type="checkbox" name="willpower-null10" value="">
+
+            </div>
+
+          </fieldset>
+
+          <fieldset class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+
+            <header class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Vitalidade</h3>
+            </header>
+
+            <label for="escorted"> Escoriado
+              <select class="select-option" name="escorted">
+                <option value=""></option>
+                <option value="/">/</option>
+                <option value="\">\</option>
+                <option value="X">X</option>
+              </select>
+            </label>
+
+            <label for="bruised"> Machucado
+              <select class="select-option" name="bruised">
+                <option value=""></option>
+                <option value="/">/</option>
+                <option value="\">\</option>
+                <option value="X">X</option>
+              </select>
+            </label>
+
+            <label for="injured"> Ferido
+              <select class="select-option" name="injured">
+                <option value=""></option>
+                <option value="/">/</option>
+                <option value="\">\</option>
+                <option value="X">X</option>
+              </select>
+            </label>
+
+            <label for="seriously-injured"> Gravemente ferido
+              <select class="select-option" name="seriously-injured" name="seriously-injured">
+                <option value=""></option>
+                <option value="/">/</option>
+                <option value="\">\</option>
+                <option value="X">X</option>
+              </select>
+            </label>
+
+            <label for="beaten"> Espancado
+              <select class="select-option" name="beaten">
+                <option value=""></option>
+                <option value="/">/</option>
+                <option value="\">\</option>
+                <option value="X">X</option>
+              </select>
+            </label>
+
+            <label for="crippled"> Aleijado
+              <select class="select-option" name="crippled">
+                <option value=""></option>
+                <option value="/">/</option>
+                <option value="\">\</option>
+                <option value="X">X</option>
+              </select>
+            </label>
+
+            <label for="disabled"> Incapacitado
+              <select class="select-option" name="disabled">
+                <option value=""></option>
+                <option value="/">/</option>
+                <option value="\">\</option>
+                <option value="X">X</option>
+              </select>
+            </label>
+
+          </fieldset>
+
+        </form>
+
+
+      </section>
+
+
+      <!-- Page form container -->
+      <section class="form-container pseudo-before-border">
+
+
+        <form id="char-others" class="form-group">
+
+          <fieldset class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <header class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Combate</h3>
+            </header>
+
+            <div class="table-responsive">
+
+              <table class="table table-bordered table-condensed ">
+
+                <thead>
+                  <tr><th>Arma</th><th>Dificuldade</th><th>Dano</th></tr>
+                </thead>
+
+                <tbody>
+                  <tr><td>Arma 1</td><td>Dificuldade 1</td><td>Dano 1</td></tr>
+                  <tr><td>Arma 2</td><td>Dificuldade 2</td><td>Dano 2</td></tr>
+                  <tr><td>Arma 3</td><td>Dificuldade 3</td><td>Dano 3</td></tr>
+                </tbody>
+
+              </table>
+
+            </div>
+
+          </fieldset>
+
+        </form>
+
+
+      </section>
+
+
+      <!-- Page form container -->
+      <section class="form-container pseudo-before-border">
+
+
+        <form id="char-others" class="form-group">
+
+          <fieldset class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+            <header class="caracteristc-type-content text-center">
+              <h3 class="caracteristc-type text-center">Experiência</h3>
+            </header>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <header class="caracteristc-type-content text-center">
+                <h3>Total de pontos de experiência</h3>
+              </header>
+              <div class="">
+                <span class="exp-box text-center">138</span>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <header class="caracteristc-type-content text-center">
+                <h3>Total de pontos distribuidos</h3>
+              </header>
+              <div class="">
+                <span class="exp-box text-center">136</span>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <header class="caracteristc-type-content text-center">
+                <h3>Pontos de sobra</h3>
+              </header>
+              <div class="">
+                <span class="exp-box text-center">2</span>
+              </div>
+            </div>
+
+          </fieldset>
+
+        </form>
 
 
       </section>

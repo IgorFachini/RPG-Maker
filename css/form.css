@@ -1,20 +1,19 @@
+/* General Form definitions */
 form {
   font-size: 150%;
 }
 
+/* General Fieldset definitions */
 fieldset {
   padding: 0 1ch;
 }
 
+/* General labels definitions */
 label {
   width: 100%;
 }
 
-label > input{
-  float: right;
-  width: auto !important;
-}
-
+/* General input definitions */
 input {
   box-shadow: none !important;
   color: #660000 !important;
@@ -26,11 +25,19 @@ input {
   background: none !important;
 }
 
+/* Input inside labels definitions */
+label > input {
+  float: right;
+  width: auto !important;
+}
+
+/* General Input definitions on focus */
 input:focus {
   border-bottom: solid 2px rgba(0, 0, 0, 1) !important;
   transition: .3s ease-in-out;
 }
 
+/* Definitions on Title character caracteristics */
 .caracteristc-type {
   border-bottom: solid 2px rgba(0, 0, 0, 1) !important;
   display: inline-block;
