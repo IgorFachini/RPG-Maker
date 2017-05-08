@@ -42,9 +42,28 @@ hr.separator {
   margin: 4ch 0 4ch 0;
 }
 
+/* Experience box definitions */
 .exp-box {
   width: 100%;
   display: block;
   padding: 4ch 2ch;
   background-color: rgba(200, 188, 161, .5);
+}
+
+/* - - - - - - - Media query - - - - - - - */
+
+@media screen and (max-width: 400px) {
+
+  header.rpg-title {
+    font-size: 300% !important;
+  }
+
+  header.char-caracteristics {
+    font-size: 150% !important;
+  }
+
+  form {
+    font-size: 100% !important;
+  }
+
 }
