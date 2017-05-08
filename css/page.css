@@ -50,7 +50,29 @@ hr.separator {
   background-color: rgba(200, 188, 161, .5);
 }
 
+/* Experience container definitions */
+.exp-container {
+  display: flex;
+}
+
+/* Experience div definitions inside container */
+.exp-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - Media query - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - */
+
+@media screen and (max-width: 767px) {
+
+  .exp-container {
+    display: block;
+  }
+
+}
 
 @media screen and (max-width: 400px) {
 
