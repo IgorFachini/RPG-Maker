@@ -1,11 +1,12 @@
 /* General Form definitions */
 form {
-  font-size: 150%;
+  font-size: 100%;
 }
 
 /* General Fieldset definitions */
 fieldset {
   padding: 0 1ch;
+  font-size: 1.2em;
 }
 
 /* General labels definitions */
