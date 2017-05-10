@@ -6,7 +6,7 @@ nav.my-navbar {
   background-color: rgba(255, 255, 255, 1);
   position: relative;
   padding: 0;
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
 }
 
 /* Trapezium defines */
@@ -41,9 +41,10 @@ header.my-navbar-header {
 /* Unorder navbar list defines */
 ul.my-navlist {
   margin: 0;
-  padding: 4vh 0 0 0;
+  padding: 3vh 0 0 0;
   display: flex;
-  height: 100%;
+  align-items: center;
+  justify-content: space-between;
   width: auto;
 }
 
@@ -57,13 +58,17 @@ a, li {
 ul.my-navlist li {
   display: flex;
   float: right;
-  padding: 1ch;
+  padding: 1.5ch;
   height: 100%;
   background-image: url("../img/buttons/old-papper/old-papper3.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   transition: .2s ease-in-out;
+}
+
+ul.my-navlist li a {
+  opacity: .7;
 }
 
 /* Anchor and list defines on hover */
@@ -89,7 +94,7 @@ a.my-navbar-brand {
   font-family: 'Barbarian', cursive;
   font-size: 2.5em;
   line-height: 1.3ch;
-  padding: 1ch 1ch 1ch 1ch;
+  padding: 1ch 2ch 1ch 2ch;
   margin: .5ch 0 0 0;
   display: inline-block;
   background-image: url("../img/buttons/old-papper/old-papper3.png");
@@ -98,6 +103,10 @@ a.my-navbar-brand {
   background-repeat: no-repeat;
   font-weight: 500;
   transition: .2s ease-in-out;
+}
+
+a.my-navbar-brand div{
+  opacity: .7;
 }
 
 /* Brand site defines on hover */

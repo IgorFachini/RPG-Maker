@@ -70,6 +70,19 @@ body {
   justify-content: space-between;
 }
 
+span.barbarian {
+  font-family: 'Barbarian';
+}
+
+span.barbarian::before, span.barbarian::after {
+  content: ' ';
+}
+
+/* Scroll defines */
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - Media query - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - */
