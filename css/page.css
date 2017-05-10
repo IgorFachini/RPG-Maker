@@ -1,5 +1,5 @@
 /* Main container definitions */
-html, body, main.main-container {
+html, body, .main-container {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -8,11 +8,11 @@ html, body, main.main-container {
 }
 
 /* Main container defines */
-main.main-container {
+.main-container {
   margin: 2ch 0 2ch 0;
 }
 
-section.container {
+.container {
   background-color: rgba(255, 255, 255, .9);
   box-shadow: 0 0 20px;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 /* Definitions on Section that contains forms */
-section.form-container {
+.form-container {
   width: 100%;
   float: left;
   clear: left;
@@ -34,7 +34,7 @@ section.form-container {
 }
 
 /* Separator definitions */
-hr.separator {
+.separator {
   width: 100%;
   border: solid 1px #000;
   margin: 4ch 0;

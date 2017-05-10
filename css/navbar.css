@@ -1,0 +1,107 @@
+/* Navbar defines */
+nav.my-navbar {
+  font-size: 150%;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+  padding: 0;
+  margin-bottom: 15vh;
+}
+
+/* Trapezium defines */
+nav.my-navbar::after {
+  content: '';
+  position: absolute;
+  bottom: -4vh;
+  width: 100vw;
+  border-top: solid 4vh rgba(255, 255, 255, 1);
+  border-left: solid 10vw transparent;
+  border-right: solid 10vw transparent;
+  z-index: -1;
+}
+
+/* Navbar container defines */
+section.navbar-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10vw;
+}
+
+/* Navbar header defines */
+header.my-navbar-header {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  float: left;
+}
+
+/* Unorder navbar list defines */
+ul.my-navlist {
+  margin: 0;
+  padding: 4vh 0 0 0;
+  display: flex;
+  height: 100%;
+  width: auto;
+}
+
+/* Anchor defines */
+a, li {
+  text-decoration: none !important;
+  list-style-type: none !important;
+}
+
+/* Navbar List defines */
+ul.my-navlist li {
+  display: flex;
+  float: right;
+  padding: 1ch;
+  height: 100%;
+  background-image: url("../img/buttons/old-papper/old-papper3.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: .2s ease-in-out;
+}
+
+/* Anchor and list defines on hover */
+ul.my-navlist li:hover {
+  transform: scale(1.1, 1.1);
+  transition: .2s ease-in-out;
+  color: #500 !important;
+}
+
+/* General Anchor defines */
+a, a:hover {
+  color: #500;
+}
+
+/* Margin control of navbar lists */
+ul.my-navlist li:not(:last-child) {
+  margin-right: .2ch;
+}
+
+/* Brand site defines */
+a.my-navbar-brand {
+  color: #000;
+  font-family: 'Barbarian', cursive;
+  font-size: 2.5em;
+  line-height: 1.3ch;
+  padding: 1ch 1ch 1ch 1ch;
+  margin: .5ch 0 0 0;
+  display: inline-block;
+  background-image: url("../img/buttons/old-papper/old-papper3.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: 500;
+  transition: .2s ease-in-out;
+}
+
+/* Brand site defines on hover */
+a.my-navbar-brand:hover {
+  color: #500;
+  transition: .2s ease-in-out;
+}
