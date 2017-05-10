@@ -121,3 +121,8 @@
     font-family: Valdemar;
     src: url("../fonts/valdemar/valdemar.ttf");
 }
+
+@font-face {
+    font-family: StrongGlasgow;
+    src: url("../fonts/StrongGlasgow/StrongGlasgow.ttf");
+}

@@ -27,7 +27,7 @@ section.navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10vw;
+  padding: 0 2vw;
 }
 
 /* Navbar header defines */
@@ -113,4 +113,13 @@ a.my-navbar-brand div{
 a.my-navbar-brand:hover {
   color: #500;
   transition: .2s ease-in-out;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - Media queryes - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@media screen and (max-width: 992px) {
+  
 }
