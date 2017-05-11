@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>RPG-MAKER</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../libs/bootstrap-3.3.7/css/bootstrap.min.css">
+  <!-- Font style - Medieval -->
+  <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+  <!-- Custom fonts -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+
+  <!-- Main page container -->
+  <main class="main-container">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="../index.html">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="../index.html">Home</a></li>
+          <li><a href="#">Perfil</a></li>
+          <li><a href="cards.html">Criar</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page container -->
+    <section class="container">
+
+
+      <h1>Firebase - Login</h1>
+
+      <div id="firebaseui-auth-container"></div>
+
+
+
+    </section>
+  </main>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="../libs/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="../libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script src="../js/app.js"></script>
+
+  <!-- plugins -->
+  <script src="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.css" />
+  <!-- End - plugins -->
+  <script type="text/javascript">
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) { // ถ้าล็อคอินเอาไว้อยู่แล้ว...
+      window.location.href = 'profile.html';
+    }
+  });
+  // FirebaseUI config.
+  var uiConfig = {
+    'signInSuccessUrl': false,
+    'signInOptions': [
+      // comments อันที่ไม่ใช้ทิ้งได้เลย
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+      //firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+      //firebase.auth.GithubAuthProvider.PROVIDER_ID,
+      firebase.auth.EmailAuthProvider.PROVIDER_ID
+    ],
+    // Terms of service url.
+    'tosUrl': false,
+  };
+  // Initialize the FirebaseUI Widget using Firebase.
+  var ui = new firebaseui.auth.AuthUI(firebase.auth());
+  // The start method will wait until the DOM is loaded.
+  ui.start('#firebaseui-auth-container', uiConfig);
+  </script>
+
+</body>
+</html>
