@@ -32,10 +32,15 @@ section.navbar-container {
 
 /* Navbar header defines */
 header.my-navbar-header {
-  display: inline-block;
-  width: auto;
-  height: auto;
+  display: block;
+  position: relative;
   float: left;
+  width: 18vw;
+  height: 10vw;
+  min-width: 210px;
+  min-height: 115px;
+  max-width: 260px;
+  max-height: 130px;
 }
 
 /* Unorder navbar list defines */
@@ -60,7 +65,7 @@ ul.my-navlist li {
   float: right;
   padding: 1.5ch;
   height: 100%;
-  background-image: url("../img/buttons/old-papper/old-papper3.png");
+  background-image: url("../img/buttons/old-papper/old-papper5.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,6 +74,8 @@ ul.my-navlist li {
 
 ul.my-navlist li a {
   opacity: .7;
+  color: #000;
+  margin: 2ch;
 }
 
 /* Anchor and list defines on hover */
@@ -94,10 +101,11 @@ a.my-navbar-brand {
   font-family: 'Barbarian', cursive;
   font-size: 2.5em;
   line-height: 1.3ch;
-  padding: 1ch 2ch 1ch 2ch;
-  margin: .5ch 0 0 0;
-  display: inline-block;
-  background-image: url("../img/buttons/old-papper/old-papper3.png");
+  padding: 0;
+  height: 100%;
+  margin: 0;
+  display: block;
+  background-image: url("../img/logo/logo.png");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,7 +119,6 @@ a.my-navbar-brand div{
 
 /* Brand site defines on hover */
 a.my-navbar-brand:hover {
-  color: #500;
   transition: .2s ease-in-out;
 }
 
@@ -121,5 +128,5 @@ a.my-navbar-brand:hover {
 /* - - - - - - - - - - - - - - - - - - - - - - - - */
 
 @media screen and (max-width: 992px) {
-  
+
 }
