@@ -76,19 +76,16 @@ ul.my-navlist li a {
   opacity: .7;
   color: #000;
   margin: 2ch;
+  transition: .2s ease-in-out;
 }
 
 /* Anchor and list defines on hover */
-ul.my-navlist li:hover {
+ul.my-navlist li:hover, ul.my-navlist li:hover a {
   transform: scale(1.1, 1.1);
   transition: .2s ease-in-out;
-  color: #500 !important;
+  color: #900 !important;
 }
 
-/* General Anchor defines */
-a, a:hover {
-  color: #500;
-}
 
 /* Margin control of navbar lists */
 ul.my-navlist li:not(:last-child) {
@@ -120,6 +117,8 @@ a.my-navbar-brand div{
 /* Brand site defines on hover */
 a.my-navbar-brand:hover {
   transition: .2s ease-in-out;
+  animation: flag-move 1s infinite ease-in-out;
+  animation-direction: alternate;
 }
 
 
@@ -129,4 +128,12 @@ a.my-navbar-brand:hover {
 
 @media screen and (max-width: 992px) {
 
+}
+
+@keyframes flag-move {
+  0%    { transform: rotateY(0deg);}
+  25%   { transform: rotateY(20deg);}
+  50%   { transform: rotateY(0deg);}
+  75%   { transform: rotateY(-20deg);}
+  100%   { transform: rotateY(0deg);}
 }
