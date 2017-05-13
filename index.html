@@ -23,13 +23,23 @@
         <h1>Cards</h1>
       </section>
       <ul class="my-navlist hidden-xs hidden-sm">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Perfil</a></li>
-        <li><a href="pages/cards.html">Criar</a></li>
+        <li><a id="home" href="#">Home</a></li>
+        <li><a id="profile" href="#">Perfil</a></li>
+        <li><a id="create" href="pages/cards.html">Criar</a></li>
       </ul>
     </section>
   </nav>
 
+  <ul class='langchooser'>
+    <div id="langpick" class="slide2" style="cursor:pointer;">
+      <a href="#"> <span id='pal'>Pick a language!</span> <img src="img/lovebot.gif"> </a>
+    </div>
+    <div class="view2">
+      <a href="javascript:setValue('deflang', 'eng', 365);" onclick="changeLanguage('eng');"> English </a> <br>
+      <a href="javascript:setValue('deflang', 'por', 365);" onclick="changeLanguage('por');"> português </a> <br>
+      <br>
+    </div>
+  </ul>
   <!-- Main page container -->
   <main class="main-container">
 
@@ -38,7 +48,7 @@
     <section class="container">
       <header class="rpg-title text-center">
         <section class="rpg-title-content">
-          <h1><span class="barbarian">&lt;&gt;</span>Player cards list<span class="barbarian">&lt;&gt;</span></h1>
+          <h1 id="playerCardList"><span class="barbarian">&lt;&gt;</span>Player cards list<span class="barbarian">&lt;&gt;</span></h1>
         </section>
       </header>
 
@@ -55,6 +65,9 @@
    <link rel="import" href="partials/footer.html">
    <!-- OTHER JAVASCRIPT LYBRARIES... -->
     <script src="js/init.js"></script>
+    <script type="text/javascript">
+      preReq();
+    </script>
 
   </section>
 </body>

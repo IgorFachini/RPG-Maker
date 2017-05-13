@@ -10,13 +10,13 @@ firebase.database().ref('char').on('value', function (snapshot) {
     console.log(entry);
 
     html = `<div class="col-md-4">
-    <a href="entry.html?id=${item.getKey()}" style="text-decoration:none!important;">
+    <a href="entry.html?id=${item.getKey()}"style="text-decoration:none!important;">
     <div class="panel panel-info">
     <div class="panel-heading">
-    <h3 class="panel-title">Nome:  ${entry.nome}</h3>
+    <h3 class="panel-title"  id="name" >Nome:  ${entry.nome}</h3>
     </div>
     <div class="panel-body">
-    <small>Jogador: ${entry.jogador}  </small>
+    <small  id="player" >Jogador: ${entry.jogador}  </small>
     <hr>
     </div>
     </div>
