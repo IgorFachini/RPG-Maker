@@ -1,3 +1,29 @@
+
+.langchooser li {
+  list-style: none;
+}
+.langchooser {
+  margin: 0;
+  font-family: Arial;
+  background: rgba(0,0,0,0.35);
+  /*position: fixed;*/
+  /*top: 0px;*/
+  /*left: 0px;*/
+  padding: 10px;
+  /*font-size: 12em;*/
+  text-align: left;
+  z-index: 10;
+}
+.langchooser a {
+  color: #ffffff;
+}
+
+.langchooser a:hover{
+  color: pink;
+}
+
+
+
 /* Main container definitions */
 html, body, .main-container {
   margin: 0;
