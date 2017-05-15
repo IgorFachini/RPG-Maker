@@ -6,8 +6,8 @@ languages['eng'] = {
   home: 'Home',
   create: 'Create',
   playerCardList: 'Player Card List',
-  // player: 'Player',
-  // name: 'Name',
+  //player: 'Player',
+  //name: 'Name',
 };
 languages['por'] = {
   pal: 'Selecione uma linguagem!',
@@ -15,8 +15,9 @@ languages['por'] = {
   home: 'Home',
   create: 'Criar',
   playerCardList: 'Lista De Folha de Jogadores',
-  player: 'Jogador',
-  name: 'Nome',
+  //player: 'Jogador',
+  //name: 'Nome',
+
 };
 
 $(document).ready(function () {
